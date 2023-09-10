@@ -296,12 +296,14 @@ img {
 }
 
 /*========== EDUCATION AND EXPERIENCE ==========*/
-.education__content{
+.education__content {
   display: flex;
 }
+
 .education__time {
   padding-right: 1rem;
 }
+
 .education__rounder {
   position: relative;
   display: block;
@@ -311,38 +313,46 @@ img {
   border-radius: 50%;
   margin-top: .25rem;
 }
+
 .education__line {
   display: block;
   width: 2px;
   height: 110%;
   background-color: var(--text-color-light);
-  transform: translate(7px,0);
+  transform: translate(7px, 0);
 }
+
 .education__data {
   gap: .5rem;
 }
+
 .education__title {
   font-size: var(--h3-font-size);
 }
+
 .education__studies {
   font-size: var(--small-font-size);
   color: var(--title-color);
 }
+
 .education__year {
   font-size: var(--smaller-font-size);
 }
+
 /*========== SKILLS AND LANGUAGES ==========*/
 .skills__content {
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 0;
 
 }
-.skills__name{
+
+.skills__name {
   display: flex;
   align-items: center;
   margin-bottom: var(--mb-3);
 }
-.skills__circle{
+
+.skills__circle {
   display: inline-block;
   width: 5px;
   height: 5px;
