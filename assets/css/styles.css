@@ -378,8 +378,19 @@ img {
 }
 
 /*========== REFERENCES ==========*/
-
-
+.references_contact {
+  gap: .25rem;
+}
+.references_subtitle {
+  color: var(--text-color-light);
+}
+.references_subtitle , 
+.references_contact {
+  font-size: var(--small-font-size);
+}
+.references-title {
+  font-size: var(--h3-font-size);
+}
 /*========== INTERESTS ==========*/
 
 
