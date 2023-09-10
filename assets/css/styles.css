@@ -4,7 +4,7 @@
 /*===== VARIABLES CSS =====*/
 :root {
   --header-height: 3rem;
-  
+
   /*========== Colors ==========*/
   --title-color: #0B0A0A;
   --text-color: #403A3A;
@@ -35,14 +35,18 @@
   --z-tooltip: 10;
   --z-fixed: 100;
 }
- 
+
 /*========== BASE ==========*/
-*,::before,::after {
+*,
+::before,
+::after {
   box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 /*========== Variables Dark theme ==========*/
 
 
@@ -57,36 +61,50 @@ html {
 
 /*========== Classes modified to reduce size and print on A4 sheet ==========*/
 body {
-   margin: 0 0 var(--header-height);
-   padding: 0;
-   font-family:  var(--body-font);
-   font-style: var(--normal-font-size);
-   background-color: var(--body-color);
-   color: var(--text-color);
-} 
-h1,h2,h3,h4,ul,p {
+  margin: 0 0 var(--header-height);
+  padding: 0;
+  font-family: var(--body-font);
+  font-style: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+ul,
+p {
   margin: 0;
 }
-h1,h2,h3 {
+
+h1,
+h2,
+h3 {
   color: var(--title-color);
   font-weight: var(--font-medium);
 }
+
 ul {
   padding: 0;
   list-style: none;
 }
-a{
+
+a {
   text-decoration: none;
 }
+
 img {
   max-width: 100%;
   height: auto;
 }
+
 /*========== CLASS CSS ==========*/
 .section {
-  padding: 1.5rem 0 ;
-  
+  padding: 1.5rem 0;
+
 }
+
 .section-title {
   font-size: var(--h2-font-size);
   color: var(--title-color);
@@ -95,15 +113,17 @@ img {
   letter-spacing: .35rem;
   text-align: center;
   margin-bottom: var(--mb-3);
-  
+
 }
+
 /*========== LAYOUT ==========*/
 .bd-container {
   max-width: 968px;
-  width: calc(100% - 3rem) ;
+  width: calc(100% - 3rem);
   margin-left: var(--mb-3);
   margin-right: var(--mb-3);
 }
+
 .bd-grid {
   display: grid;
   gap: 1.5rem;
@@ -125,46 +145,54 @@ img {
   height: var(--header-height);
   display: flex;
   justify-content: space-between;
-  align-items: center; 
+  align-items: center;
 }
-@media screen and (max-width: 968px){
+
+@media screen and (max-width: 968px) {
   .nav__menu {
     position: fixed;
     bottom: -100%;
     left: 0;
     width: 100%;
-    padding: 1rem 1 1.5rem ;
+    padding: 1rem 1 1.5rem;
     border-color: var(--body-color);
     box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
-    border-radius: 1rem 1rem 0 0 ; 
+    border-radius: 1rem 1rem 0 0;
   }
 }
+
 .nav__logo,
 .nav__toggle {
   color: var(--title-color);
   font-weight: var(--font-medium);
 }
-.nav__toggle{
+
+.nav__toggle {
   cursor: pointer;
   font-size: 1.2rem;
 }
+
 .nav__item {
   text-align: center;
 }
+
 .nav__list {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
+
 .nav__link {
   display: flex;
   flex-direction: column;
   font-size: var(--smaller-font-size);
   font-weight: var(--font-medium);
 }
-.nav__link:hover{
+
+.nav__link:hover {
   color: var(--title-color);
 }
+
 .nav__icon {
   font-size: 1.2rem;
   margin-bottom: var(--mb-1);
@@ -179,16 +207,19 @@ img {
 
 
 /*========== HOME ==========*/
-.home{
+.home {
   position: relative;
 }
-.home__container{
+
+.home__container {
   gap: 3rem;
 }
-.home__data{
+
+.home__data {
   gap: .5rem;
   text-align: center;
 }
+
 .home__img {
   width: 120px;
   height: 120px;
@@ -196,62 +227,74 @@ img {
   justify-self: center;
   margin-bottom: var(--mb-1);
 }
-.home__title{
+
+.home__title {
   font-size: var(--h1-font-size);
 }
-.home__profession{
-  font-size:  var(--normal-font-size);
+
+.home__profession {
+  font-size: var(--normal-font-size);
   margin-bottom: var(--mb-1);
 }
+
 .home__address {
   gap: 1rem;
 }
+
 .home__information {
   display: flex;
   align-items: center;
   font-size: var(--small-font-size);
 }
+
 .home__icon {
   font-size: 1.2rem;
   margin-right: .25rem;
 }
-.home__button-movil{
+
+.home__button-movil {
   display: inline-block;
   border: 2px solid var(--text-color);
   color: var(--title-color);
-  padding: 1rem 2rem ;
+  padding: 1rem 2rem;
   border-radius: .25rem;
   transition: .3s;
   font-weight: var(--font-medium);
-  margin-top:var(--mb-3) ;
+  margin-top: var(--mb-3);
 }
+
 .home__button-movil:hover {
   background-color: var(--text-color);
   color: var(--container-color);
 }
+
 /*========== SOCIAL ==========*/
 .social__container {
   grid-template-columns: max-content;
   gap: 1rem;
 }
+
 .social__link {
   display: inline-flex;
   align-items: center;
   font-size: var(--small-font-size);
   color: var(--text-color);
 }
+
 .social__link:hover {
   color: var(--title-color);
 }
+
 .social__icon {
   font-size: 1.2rem;
   margin-right: .25rem;
 }
+
 /*========== PROFILE ==========*/
 .profile__description {
   text-align: center;
- 
 }
+
 /*========== EDUCATION AND EXPERIENCE ==========*/
 
 
@@ -275,4 +318,3 @@ img {
 
 
 /* Classes modified for large screen size */
-
