@@ -350,19 +350,22 @@ img {
 }
 
 /*========== SKILLS AND LANGUAGES ==========*/
-.skills__content {
+.skills__content ,
+.languages_content {
   grid-template-columns: repeat(2, 1fr);
-  gap: 0;
-
 }
-
-.skills__name {
+.languages_content{
+  gap: 0;
+}
+.skills__name, 
+.languages_name {
   display: flex;
   align-items: center;
   margin-bottom: var(--mb-3);
 }
 
-.skills__circle {
+.skills__circle
+.languages_circle {
   display: inline-block;
   width: 5px;
   height: 5px;
