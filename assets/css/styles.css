@@ -48,10 +48,28 @@ html {
 }
 
 /*========== Variables Dark theme ==========*/
-
+body.dark-theme {
+  --title-color: #f2f2f2;
+  --text-color: #BFBFBF;
+  --container-color: #212121;
+  --container-color-alt: #181616;
+  --body-color: #2b2b2b;
+}
 
 /*========== Button Dark/Light ==========*/
+.change-theme {
+  position: absolute;
+  right: 0;
+  top: 2.2rem;
+  display: flex;
+  color: var(--text-color);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
 
+.change-theme:hover {
+  color: var(--title-color);
+}
 
 /*========== Font size variables to scale cv ==========*/
 
@@ -339,7 +357,7 @@ img {
   font-size: var(--h3-font-size);
 }
 
-.education__studies , 
+.education__studies,
 .experience_company {
   font-size: var(--small-font-size);
   color: var(--title-color);
@@ -350,22 +368,23 @@ img {
 }
 
 /*========== SKILLS AND LANGUAGES ==========*/
-.skills__content ,
+.skills__content,
 .languages_content {
   grid-template-columns: repeat(2, 1fr);
 }
-.languages_content{
+
+.languages_content {
   gap: 0;
 }
-.skills__name, 
+
+.skills__name,
 .languages_name {
   display: flex;
   align-items: center;
   margin-bottom: var(--mb-3);
 }
 
-.skills__circle
-.languages_circle {
+.skills__circle .languages_circle {
   display: inline-block;
   width: 5px;
   height: 5px;
@@ -384,31 +403,38 @@ img {
 .references_contact {
   gap: .25rem;
 }
+
 .references_subtitle {
   color: var(--text-color-light);
 }
-.references_subtitle , 
+
+.references_subtitle,
 .references_contact {
   font-size: var(--small-font-size);
 }
+
 .references-title {
   font-size: var(--h3-font-size);
 }
+
 /*========== INTERESTS ==========*/
 .interests_container {
-    grid-template-columns: repeat(3,1fr);
-    margin-top: var(--mb-2);
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: var(--mb-2);
 }
+
 .interests_content {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .interests_icon {
   font-size: 1.5rem;
   color: var(--text-color-light);
   margin-bottom: .25rem;
 }
+
 /* Scroll top */
 .scrolltop {
   position: fixed;
@@ -424,70 +450,84 @@ img {
   transition: .4s;
   visibility: hidden;
 }
+
 .scrolltop_icon {
   font-size: 1.2rem;
   color: var(--text-color);
 }
+
 .show-scroll {
   visibility: visible;
   bottom: 5rem;
 }
+
 /*========== MEDIA QUERIES ==========*/
 /* For small devices, menu two columns */
-@media screen and (max-width: 320px){
-    .nav__list{
-      grid-template-columns: repeat(2,1fr);
-      gap: 1rem .5rem;
-    }
+@media screen and (max-width: 320px) {
+  .nav__list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem .5rem;
+  }
 }
 
 
 
 /* Classes modified for large screen size */
-@media screen and (min-width: 968px){
+@media screen and (min-width: 968px) {
   body {
-    margin: 3rem 0 ;
+    margin: 3rem 0;
   }
+
   .bd-container {
     margin-left: auto;
     margin-right: auto;
   }
+
   .l-header,
-   .scrolltop{
+  .scrolltop {
     display: none;
   }
+
   .resume {
     display: grid;
-    grid-template-columns: .5fr 1fr ;
+    grid-template-columns: .5fr 1fr;
     background-color: var(--container-color);
     box-shadow: 0 0 8px rgba(13, 12, 11, .15);
-  } 
+  }
+
   .resume__left {
     background-color: var(--container-color-alt);
   }
-  .resume__left ,
+
+  .resume__left,
   .resume__right {
     padding: 0 1.5rem;
   }
+
   .section-title,
   .profile__description {
     text-align: initial;
   }
+
   .home__container {
     gap: 1.5rem;
   }
+
   .home__button-movil {
     display: none;
   }
+
   .references_container {
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
+
   .languages_content {
-    grid-template-columns: repeat(3,max-content);
+    grid-template-columns: repeat(3, max-content);
     column-gap: 3.5rem;
   }
+
   .interests_container {
-    grid-template-columns: repeat(4,max-content);
+    grid-template-columns: repeat(4, max-content);
     column-gap: 3.5rem;
   }
 }
