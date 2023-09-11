@@ -395,8 +395,20 @@ img {
   font-size: var(--h3-font-size);
 }
 /*========== INTERESTS ==========*/
-
-
+.interests_container {
+    grid-template-columns: repeat(3,1fr);
+    margin-top: var(--mb-2);
+}
+.interests_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.interests_icon {
+  font-size: 1.5rem;
+  color: var(--text-color-light);
+  margin-bottom: .25rem;
+}
 /* Scroll top */
 
 
