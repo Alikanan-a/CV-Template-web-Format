@@ -434,6 +434,60 @@ img {
 }
 /*========== MEDIA QUERIES ==========*/
 /* For small devices, menu two columns */
+@media screen and (max-width: 320px){
+    .nav__list{
+      grid-template-columns: repeat(2,1fr);
+      gap: 1rem .5rem;
+    }
+}
+
 
 
 /* Classes modified for large screen size */
+@media screen and (min-width: 968px){
+  body {
+    margin: 3rem 0 ;
+  }
+  .bd-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .l-header,
+   .scrolltop{
+    display: none;
+  }
+  .resume {
+    display: grid;
+    grid-template-columns: .5fr 1fr ;
+    background-color: var(--container-color);
+    box-shadow: 0 0 8px rgba(13, 12, 11, .15);
+  } 
+  .resume__left {
+    background-color: var(--container-color-alt);
+  }
+  .resume__left ,
+  .resume__right {
+    padding: 0 1.5rem;
+  }
+  .section-title,
+  .profile__description {
+    text-align: initial;
+  }
+  .home__container {
+    gap: 1.5rem;
+  }
+  .home__button-movil {
+    display: none;
+  }
+  .references_container {
+    grid-template-columns: repeat(2,1fr);
+  }
+  .languages_content {
+    grid-template-columns: repeat(3,max-content);
+    column-gap: 3.5rem;
+  }
+  .interests_container {
+    grid-template-columns: repeat(4,max-content);
+    column-gap: 3.5rem;
+  }
+}
