@@ -90,7 +90,7 @@ function scaleCv() {
 
 /*==================== REMOVE THE SIZE WHEN THE CV IS DOWNLOADED ====================*/
 function removeScale() {
-    document.classList.remove('scale-cv')
+    document.body.classList.remove('scale-cv')
 }
 
 /*==================== GENERATE PDF ====================*/
