@@ -259,7 +259,7 @@ img {
     bottom: -100%;
     left: 0;
     width: 100%;
-    padding: 1rem 1 1.5rem;
+    padding: 1rem  1.5rem;
     border-color: var(--body-color);
     box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
     border-radius: 1rem 1rem 0 0;
