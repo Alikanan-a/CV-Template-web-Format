@@ -185,19 +185,24 @@ body.scale-cv {
 .scale-cv .interests_container {
   column-gap: 2.5rem;
 }
+
 .scale-cv .interests_name {
   font-size: var(--smaller-font-size);
 }
+
 .scale-cv .languages {
   padding: 0;
 }
+
 .scale-cv #skills {
   padding: 0;
 }
+
 .scale-cv .skills_icon {
   font-size: 1.1rem;
   color: var(--title-color);
 }
+
 body {
   margin: 0 0 var(--header-height);
   padding: 0;
@@ -611,9 +616,11 @@ img {
   flex-direction: column;
   align-items: center;
 }
-.interests_name{
+
+.interests_name {
   font-size: var(--smaller-font-size);
 }
+
 .interests_icon {
   font-size: 1.5rem;
   color: var(--text-color-light);
