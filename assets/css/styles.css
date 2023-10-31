@@ -305,6 +305,15 @@ img {
     background-color: var(--body-color);
     transition: .3s;
   }
+  .skills__name,
+  .languages_name {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-evenly; */
+  flex-direction: column;
+  row-gap: 1rem;
+  margin-bottom: var(--mb-3);
+}
 }
 
 .nav__logo,
@@ -564,6 +573,8 @@ img {
 .languages_name {
   display: flex;
   align-items: center;
+  /* justify-content: space-evenly; */
+  /* flex-direction: column; */
   margin-bottom: var(--mb-3);
 }
 
@@ -727,4 +738,43 @@ img {
     column-gap: 3rem;
     row-gap: 2rem;
   }
+}
+#html-icon {
+  color: orangered;
+}
+#css-icon {
+  color: rgb(137, 168, 253);
+}
+#sass-icon {
+  color: #c69 ;
+}
+#bootstrap-icon {
+  color: #563d7c;
+}
+#tailwind-icon {
+  color: skyblue;
+}
+#javaScript-icon {
+  color: yellow;
+}
+#jQuery-icon {
+  color: #0769ad;
+}
+#VUE-icon {
+  color: #41B883;
+}
+#React-icon {
+  color: #61DBFB;
+}
+#PHP-icon {
+ color:  #8993be ; 
+}
+#MySQL-icon {
+  color: #f29111;
+}
+#GIT-icon {
+  color: #F1502F;
+}
+#Blender-icon  { 
+  color:#EA7600;
 }
